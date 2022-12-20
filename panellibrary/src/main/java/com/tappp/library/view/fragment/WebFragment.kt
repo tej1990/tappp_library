@@ -63,7 +63,7 @@ class WebFragment() : Fragment() {
             }
         }
         mWebView!!.addJavascriptInterface(CommonInterface(context), "Android")
-        var file = "file:android_asset/sample.html"
+        var file = "file:android_asset/web-build/index.html"
         if (mValue==2){//S3_WEB_VIEW
            file = "http://tappp-web-build.s3-website.us-east-2.amazonaws.com/"
         }/*else if(mValue==3){//LOCAL_VANILA_CALENDER
