@@ -63,14 +63,14 @@ class WebFragment() : Fragment() {
             }
         }
         mWebView!!.addJavascriptInterface(CommonInterface(context), "Android")
-        var file = "file:android_asset/sampledemo.html"
+        var file = "file:android_asset/sample.html"
         if (mValue==2){//S3_WEB_VIEW
            file = "http://tappp-web-build.s3-website.us-east-2.amazonaws.com/"
-        }else if(mValue==3){//LOCAL_VANILA_CALENDER
+        }/*else if(mValue==3){//LOCAL_VANILA_CALENDER
             file = "file:android_asset/calender/index.html"
         }else if(mValue==5){//LOCAL_S3_PANEL
             file = "file:android_asset/panel/index.html"
-        }
+        }*/
         mWebView!!.loadUrl(file)
     }
 }
